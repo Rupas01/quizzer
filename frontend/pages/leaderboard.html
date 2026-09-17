@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | Quizzer</title>
+    <link rel="stylesheet" href="../css/leaderboard.css">
+</head>
+<body>
+    <!-- Consistent Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="../images/logo.jpg" alt="Logo" class="logo" />
+            <h2>Quizzer</h2>
+        </div>
+        <div class="nav-right">
+            <a href="/home" class="nav-link">Home</a>
+            <a href="/leaderboard" class="nav-link">Leaderboard</a>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div id="quizSelectionView" class="leaderboard-container">
+            <header>
+                <h1>Select a Quiz</h1>
+                <p>Find a quiz to view its leaderboard.</p>
+            </header>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by name or ID...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <main id="quizListContainer">
+                <p id="loadingMessage">Loading quizzes...</p>
+            </main>
+            <a href="/home" class="back-link">← Back to Home</a>
+        </div>
+
+        <div id="quizLeaderboardView" class="leaderboard-container" style="display: none;">
+            <header>
+                <h1>🏆 Leaderboard 🏆</h1>
+                <p>Top scores for: <strong id="leaderboardQuizName"></strong></p>
+            </header>
+            <main>
+                <ol id="leaderboardList" class="leaderboard-list">
+                </ol>
+            </main>
+            <button id="backToSelectionBtn" class="back-link">← Back to Quiz Selection</button>
+        </div>
+    </div>
+
+    <script src="../js/leaderboard.js"></script>
+</body>
+</html>

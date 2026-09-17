@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Questions | Quizzer</title>
+    <link rel="stylesheet" href="../css/addQuestions.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add Questions to "<span id="quizNameTitle"></span>"</h1>
+            <p>Add at least one question. Mark the correct answer using the radio button.</p>
+        </header>
+
+        <form id="addQuestionForm" class="question-form">
+            <textarea id="questionText" placeholder="Enter your question here..." required></textarea>
+            
+            <div class="options-container">
+                <div class="option-input-group">
+                    <input type="radio" name="correctOption" value="0" required>
+                    <input type="text" class="option-input" placeholder="Option A" required>
+                </div>
+                <div class="option-input-group">
+                    <input type="radio" name="correctOption" value="1">
+                    <input type="text" class="option-input" placeholder="Option B" required>
+                </div>
+                <div class="option-input-group">
+                    <input type="radio" name="correctOption" value="2">
+                    <input type="text" class="option-input" placeholder="Option C" required>
+                </div>
+                <div class="option-input-group">
+                    <input type="radio" name="correctOption" value="3">
+                    <input type="text" class="option-input" placeholder="Option D" required>
+                </div>
+            </div>
+            
+            <button type="submit" id="addQuestionBtn">Add This Question</button>
+        </form>
+
+        <section class="added-questions">
+            <h2>Added Questions (<span id="questionCount">0</span>)</h2>
+            <ul id="questionsList">
+                </ul>
+        </section>
+
+        <button id="finishBtn" class="finish-button" disabled>Finish & Get Quiz ID</button>
+    </div>
+
+    <div id="finishModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>🎉 Quiz Created!</h2>
+            <p>Share this unique ID with your friends:</p>
+            <div id="finalQuizId" class="quiz-id-box"></div>
+            <button id="copyIdBtn">Copy ID</button>
+        </div>
+    </div>
+
+    <script src="../js/addQuestions.js"></script>
+</body>
+</html>

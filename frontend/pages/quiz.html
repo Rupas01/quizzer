@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz in Progress | Quizzer</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1 id="question-text">Loading question...</h1>
+            <div class="quiz-meta">
+                <span>Time Left: <span id="timer">30</span>s</span>
+                <span>Question <span id="question-counter">1 / 10</span></span>
+            </div>
+        </header>
+
+        <main class="quiz-body">
+            <div id="options-container" class="options-grid">
+                </div>
+        </main>
+
+        <footer class="quiz-footer">
+            <button id="next-btn" disabled>Next Question</button>
+        </footer>
+    </div>
+    <script src="../js/quiz.js"></script>
+    </body>
+</html>

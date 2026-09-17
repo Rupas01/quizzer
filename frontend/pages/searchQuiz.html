@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Participate in Quiz | Quizzer</title>
+    <link rel="stylesheet" href="../css/search.css" />
+</head>
+<body>
+    <!-- Consistent Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="../images/logo.jpg" alt="Logo" class="logo" />
+            <h2>Quizzer</h2>
+        </div>
+        <div class="nav-right">
+            <a href="/home" class="nav-link">Home</a>
+            <a href="/leaderboard" class="nav-link">Leaderboard</a>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div class="search-wrapper">
+            <h2>🔍 Search for a Quiz</h2>
+            <p>Find a quiz by its name or unique quiz ID to join the fun.</p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter quiz name or ID..." />
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div id="resultsContainer">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Quizzer | Create and Play Quizzes</p>
+    </footer>
+
+    <script src="../js/searchQuiz.js"></script>
+</body>
+</html>

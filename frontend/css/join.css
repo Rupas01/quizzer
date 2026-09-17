@@ -1,0 +1,114 @@
+/* --- Google Font & CSS Variables (Consistent with other pages) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #4a47a3;
+    --primary-hover: #3a378a;
+    --background-color: #f4f7fc;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --light-text-color: #777;
+    --border-color: #e0e0e0;
+    --error-color: #e74c3c;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.join-wrapper {
+    width: 100%;
+    max-width: 450px;
+    background: var(--card-background);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.join-wrapper h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.join-wrapper p {
+    color: var(--light-text-color);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.join-wrapper .quiz-id {
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.password-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 71, 163, 0.2);
+}
+
+.join-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.error-message {
+    color: var(--error-color);
+    margin-top: 15px;
+    font-weight: 500;
+    height: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+}

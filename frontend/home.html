@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzer | Home</title>
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/logo.jpg" alt="Quizzer Logo" class="logo" />
+            <h1>Quizzer</h1>
+        </div>
+        <div class="nav-right">
+            <span id="welcomeUser"></span>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h2>Welcome to Your Dashboard 🎯</h2>
+        <p>Create, join, and track quizzes all in one place.</p>
+    </header>
+
+    <main class="dashboard">
+        <div class="grid-container">
+            <div class="card" onclick="createQuiz()">
+                <img src="images/create-icon.png" alt="Create Quiz" class="card-icon">
+                <h3>Create Quiz</h3>
+                <p>Build your own custom quiz and share it with others.</p>
+            </div>
+            <div class="card" onclick="joinQuiz()">
+                <img src="images/hero-quiz.webp" alt="Join Quiz" class="card-icon">
+                <h3>Participate in Quiz</h3>
+                <p>Join an existing quiz and test your knowledge.</p>
+            </div>
+            <div class="card" onclick="viewScores()">
+                <img src="images/results-icon.png" alt="View Scores" class="card-icon">
+                <h3>View Leaderboard</h3>
+                <p>Check your performance and see top rankings.</p>
+            </div>
+            <div class="card" onclick="manageAccount()">
+                <img src="images/gear-icon.webp" alt="Manage Account" class="card-icon">
+                <h3>Manage Account</h3>
+                <p>Update your details or change your password.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Quizzer. All rights reserved.</p>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
